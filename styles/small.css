@@ -1,0 +1,215 @@
+/* Base Layout Variables */
+:root {
+    --primary-color: #1a1a1a;
+    --accent-completed: #d4edda;
+    --accent-incomplete: #fff3cd;
+    --text-completed: #155724;
+    --text-incomplete: #856404;
+    --card-background: #ffffff;
+    --border-radius: 6px;
+    --padding-base: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem var(--padding-base);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* button style  */
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger Icon using the CSS entity */
+#menu-toggle::before {
+    content: "\2630";
+}
+
+/* Open state: When the nav has the 'show' class, change the entity to the Close Icon */
+#primary-nav.show ~ #menu-toggle::before,
+header:has(nav.show) #menu-toggle::before {
+    content: "\00D7";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2c2c2c;
+    margin-top: 0.5rem;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    padding: 0.75rem var(--padding-base);
+    text-decoration: none;
+    border-top: 1px solid #444;
+    transition: background 0.2s ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    background-color: #444;
+}
+
+main {
+    flex: 1;
+    padding: var(--padding-base);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.25rem;
+}
+
+.card {
+    background: var(--card-background);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-card p {
+    padding: var(--padding-base);
+}
+
+.photo-placeholder {
+    height: 220px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    margin: var(--padding-base);
+    border-radius: var(--border-radius);
+}
+
+/* Course System Filtering Section */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: var(--padding-base) var(--padding-base) 0 var(--padding-base);
+}
+
+.filter-btn {
+    flex: 1;
+    max-width: 120px;
+    padding: 0.6rem;
+    border: 1px solid #888;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: var(--padding-base);
+}
+
+.course-item {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.course-item.completed {
+    background-color: var(--accent-completed);
+    color: var(--text-completed);
+}
+
+.course-item.incomplete {
+    background-color: var(--accent-incomplete);
+    color: var(--text-incomplete);
+}
+
+.credits-display {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 1.5rem var(--padding-base);
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #333;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}

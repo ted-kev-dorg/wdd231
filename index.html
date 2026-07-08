@@ -1,29 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chamber of Commerce Ottawa</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        
-        <header>
-            <nav></nav>
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Home Page</title>
+    <meta name="description" content="Course portal home page for WDD 231: Web Frontend Development I, showcasing student profile and dynamic course completion tracking.">
+    <meta name="author" content="Kevin Dorgeles Tetede">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/home-logo.svg" width="24" height="24">
+            <span>Kevin Dorgeles Tetede</span>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu"></button>
+        <nav id="primary-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
 
-        </main>
-        <footer>
+    <main>
+        <h1>Home</h1>
+        
+        <div class="grid-container">
+            <section class="card about-card">
+                <h2>About Me</h2>
+                <p>I'm a technology enthusiast with a passion for continuous learning and problem-solving. My interests span programming, web development, and artificial intelligence, and I enjoy turning complex ideas into practical solutions. Whether I'm building projects, learning new technologies, or improving my skills, I'm always looking for opportunities to grow and create something meaningful.</p>
+            </section>
+            
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+                <div class="photo-placeholder">
+                    <img src="images/kevin-tetede.jpg" alt="Profile picture of Kevin" width="" height="100%">
+                </div>
+            </section>
+        </div>
 
-        </footer>
-        
-        
-        <script src="" async defer></script>
-    </body>
+        <section class="card courses-card">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="btn-all" class="filter-btn active">All</button>
+                <button id="btn-cse" class="filter-btn">CSE</button>
+                <button id="btn-wdd" class="filter-btn">WDD</button>
+            </div>
+            
+            <div id="course-container" class="course-grid">
+                </div>
+            
+            <p class="credits-display">The total credits for courses listed above is: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kevintetede" target="_blank" aria-label="LinkedIn Profiles">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn profile of Kevin" height="44px" width="44px">
+            </a>
+            <a href="https://github.com/ted-kev-dorg" target="_blank" aria-label="GitHub Repository">
+                <img src="images/github-logo.svg" alt="GitHub profile of Kevin" height="44px" width="44px">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Kevin Tetede | Ottawa, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Chamber of Commerce - Directory</title>
+    <meta name="description" content="Business directory for the WestCoast Chamber of Commerce. Discover local businesses, networking opportunities, and economic growth partnerships.">
+    <meta name="author" content="Your Full Name">
+    
+    <!-- Favicon adding -->
+    <link rel="icon" href="favicon.ico"> 
+    
+    <!-- Open Graph / Facebook Meta Tags -->    
+    <meta property="og:url" content="https://ted-kevin-dorg.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="WestCoast Chamber of Commerce - Directory">
+    <meta property="og:description" content="Explore local members, service providers, and partnership entities active within the WestCoast business ecosystem.">
+    <meta property="og:image" content="https://ted-kevin-dorg.github.io/wdd231/chamber/images/facebook-meta-feed.png">
+    
+    <!-- Google Fonts Framework Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Adding CSS sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Adding JS scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/circle-of-hands.svg" alt="WestCoast Chamber of Commerce Logo" width="48" height="48">
+            <h1>WestCoast Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation"></button>
+        <nav id="primary-nav">
+            <a href="#">Home</a>
+            <a href="#" class="active">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-title-bar">
+            <h2>Directory</h2>
+            <div class="view-toggle-controls">
+                <button id="grid-view-btn" class="active-toggle" aria-label="Switch to Grid View">Grid</button>
+                <button id="list-view-btn" aria-label="Switch to List View">List</button>
+            </div>
+        </div>
+
+        <article id="directory-container" class="grid-layout">
+            <!-- Asynchronously member items populated here via directory.js -->
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>WestCoast Chamber of Commerce</h3>            
+            <p>WestCoast, Abidjan, Ivory Coast</p>
+            <p>Marcory Zone 4, 16th avenue</p>
+            <p>info@WestCoast.org</p>
+            <p>(225) 555-2300</p>
+        </div>
+        <div class="footer-social">
+            <!-- Standard validated icons handling -->
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube Channel">
+                <img src="images/youtube-logo.svg" alt="westcost youtube page" width="48" height="48">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter Feed">
+                <img src="images/x-twitter.svg" alt="westcost twitter page" width="48" height="48">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Business Network">
+                <img src="images/linkedin-logo.svg" alt="westcost linkedin page" width="48" height="48">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Kevin Dorgeles Tetede</p>
+            <p>&copy; <span id="current-year"></span> WestCoast Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>

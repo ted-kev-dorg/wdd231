@@ -1,0 +1,23 @@
+{
+  "familyName": "Anderson",
+  "dateMovedIn": "2025-04-12",
+  "numberOfMembers": 3,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "David Anderson",
+      "gender": "Male",
+      "birthdate": "1984-08-19"
+    },
+    {
+      "name": "Sarah Anderson",
+      "gender": "Female",
+      "birthdate": "1987-11-02"
+    },
+    {
+      "name": "Lily Anderson",
+      "gender": "Female",
+      "birthdate": "2015-05-30"
+    }
+  ]
+}

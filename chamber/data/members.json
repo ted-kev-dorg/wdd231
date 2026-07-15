@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Mali Digital Solutions",
+    "address": "45 Boulevard de l'Indépendance",
+    "phone": "(223) 555-0192",
+    "url": "https://malidigital.example.com",
+    "image": "mali-digital-solution.png",
+    "level": 3,
+    "tagline": "Empowering West Africa's modern web infrastructure."
+  },
+  {
+    "name": "Sahara Trade Logistics",
+    "address": "12 Caravan Route Way",
+    "phone": "(226) 555-0143",
+    "url": "https://saharatrade.example.com",
+    "image": "sahara-trade-logistics.png",
+    "level": 2,
+    "tagline": "Seamless global forwarding networks across the continent."
+  },
+  {
+    "name": "Timbuktu Artisans Co-op",
+    "address": "8 Market Square",
+    "phone": "(223) 555-0111",
+    "url": "https://timbuktuartisans.example.com",
+    "image": "timbuktu-artisans-coop.png",
+    "level": 1,
+    "tagline": "Preserving cultural heritage through authentic design."
+  },
+  {
+    "name": "Sankore Book Repository",
+    "address": "University Road, Sector 3",
+    "phone": "(225) 555-0188",
+    "url": "https://sankorebooks.example.com",
+    "image": "sankore-book-repository.png",
+    "level": 3,
+    "tagline": "Your portal to academic source material and historical text conservation."
+  },
+  {
+    "name": "Niger River AgriCorp",
+    "address": "90 Riverfront Drive",
+    "phone": "(227) 555-0176",
+    "url": "https://nigerriveragri.example.com",
+    "image": "niger-river-agricorp.png",
+    "level": 1,
+    "tagline": "Sustainable local crop management and logistics."
+  },
+  {
+    "name": "Azalaï Hospitality Group",
+    "address": "100 Avenue de la Paix",
+    "phone": "(225) 555-0155",
+    "url": "https://azalaihotels.example.com",
+    "image": "azalai-hospitality-group.png",
+    "level": 2,
+    "tagline": "World-class accommodations across regional hubs."
+  },
+  {
+    "name": "Tombouctou EcoEnergy",
+    "address": "14 Solar Array Field Road",
+    "phone": "(221) 555-0122",
+    "url": "https://ecoenergy.example.com",
+    "image": "tombouctou-ecoenergy.png",
+    "level": 3,
+    "tagline": "Clean energy configurations for emerging commercial industries."
+  }
+]

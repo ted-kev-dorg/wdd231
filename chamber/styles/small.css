@@ -162,7 +162,7 @@ main {
 
 .grid-layout .member-card .tagline {
     font-style: italic;
-    color: #666;
+    color: #3d3d3d;
     font-size: 0.95rem;
     margin-bottom: 1.25rem;
     min-height: 2.5rem; /* Helps align lower items layout uniformly */

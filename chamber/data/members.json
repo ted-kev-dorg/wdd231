@@ -4,7 +4,7 @@
     "address": "45 Boulevard de l'Indépendance",
     "phone": "(223) 555-0192",
     "url": "https://malidigital.example.com",
-    "image": "mali-digital-solution.png",
+    "image": "mali-digital-solution.webp",
     "level": 3,
     "tagline": "Empowering West Africa's modern web infrastructure."
   },
@@ -13,7 +13,7 @@
     "address": "12 Caravan Route Way",
     "phone": "(226) 555-0143",
     "url": "https://saharatrade.example.com",
-    "image": "sahara-trade-logistics.png",
+    "image": "sahara-trade-logistics.webp",
     "level": 2,
     "tagline": "Seamless global forwarding networks across the continent."
   },
@@ -22,7 +22,7 @@
     "address": "8 Market Square",
     "phone": "(223) 555-0111",
     "url": "https://timbuktuartisans.example.com",
-    "image": "timbuktu-artisans-coop.png",
+    "image": "timbuktu-artisans-coop.webp",
     "level": 1,
     "tagline": "Preserving cultural heritage through authentic design."
   },
@@ -31,7 +31,7 @@
     "address": "University Road, Sector 3",
     "phone": "(225) 555-0188",
     "url": "https://sankorebooks.example.com",
-    "image": "sankore-book-repository.png",
+    "image": "sankore-book-repository.webp",
     "level": 3,
     "tagline": "Your portal to academic source material and historical text conservation."
   },
@@ -40,7 +40,7 @@
     "address": "90 Riverfront Drive",
     "phone": "(227) 555-0176",
     "url": "https://nigerriveragri.example.com",
-    "image": "niger-river-agricorp.png",
+    "image": "niger-river-agricorp.webp",
     "level": 1,
     "tagline": "Sustainable local crop management and logistics."
   },
@@ -49,7 +49,7 @@
     "address": "100 Avenue de la Paix",
     "phone": "(225) 555-0155",
     "url": "https://azalaihotels.example.com",
-    "image": "azalai-hospitality-group.png",
+    "image": "azalai-hospitality-group.webp",
     "level": 2,
     "tagline": "World-class accommodations across regional hubs."
   },
@@ -58,7 +58,7 @@
     "address": "14 Solar Array Field Road",
     "phone": "(221) 555-0122",
     "url": "https://ecoenergy.example.com",
-    "image": "tombouctou-ecoenergy.png",
+    "image": "tombouctou-ecoenergy.webp",
     "level": 3,
     "tagline": "Clean energy configurations for emerging commercial industries."
   }

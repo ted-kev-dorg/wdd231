@@ -1,5 +1,5 @@
 // Complete dynamic fetch and view switcher setup
-const jsonSourceUrl = "data/members.json";
+const jsonSourceUrl = "./data/members.json";
 
 document.addEventListener('DOMContentLoaded', () => {
     // Adding Dynamic Footer Timestamps

@@ -73,6 +73,8 @@ nav {
 
 nav.show {
     display: flex;
+    background-color: var(--card-bg);
+    z-index: 100;
 }
 
 nav a {

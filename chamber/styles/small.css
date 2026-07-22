@@ -298,3 +298,151 @@ footer {
     /* This filter configuration shifts the white icon to match the Desert Amber Gold cover when hover */
     filter: invert(75%) sepia(40%) saturate(1000%) hue-rotate(350deg) brightness(105%);
 }
+
+
+
+
+/* --- HOME PAGE CSS MOBILE STYLES --- */
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hero Section & CTA Overlay */
+.hero-box {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.hero-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(34, 26, 21, 0.9));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.cta-overlay h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: #221a15;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #e59e48;
+    transform: scale(1.05);
+}
+
+/* Card General Styling */
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.card h2, .spotlights-wrapper h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Weather Component */
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weather-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-details #current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.forecast-day {
+    background-color: var(--bg-light);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.forecast-day .day-name {
+    font-weight: bold;
+}
+
+.forecast-day .day-temp {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Spotlight Cards Styling */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.gold-badge {
+    background-color: #ffe082;
+    color: #5d4037;
+}
+
+.silver-badge {
+    background-color: #e0e0e0;
+    color: #37474f;
+}

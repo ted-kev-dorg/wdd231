@@ -65,4 +65,48 @@
     .footer-meta {
         text-align: right;
     }
+
+
+
+
+    /* Home page CSS: Responsive Multi-Column Layout for Desktop (Home Page) */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        gap: 2rem;
+    }
+
+    .hero-box {
+        grid-area: hero;
+    }
+
+    .hero-img {
+        height: 420px;
+    }
+
+    .cta-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .events-card {
+        grid-area: events;
+    }
+
+    .weather-card {
+        grid-area: weather;
+    }
+
+    .spotlights-wrapper {
+        grid-area: spotlights;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 }

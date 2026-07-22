@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the WestCoast Chamber of Commerce. Connecting businesses, driving economic growth, and supporting our local community.">
+    <meta name="author" content="Kevin Dorgeles Tetede">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico"> 
+    
+    <!-- Open Graph Meta Tags -->    
+    <meta property="og:url" content="https://ted-kev-dorg.github.io/wdd231/chamber/index.html">
+    <meta property="og:title" content="WestCoast Chamber of Commerce - Home">
+    <meta property="og:description" content="Welcome to the WestCoast Chamber of Commerce. Discover networking opportunities and local business growth.">
+    <meta property="og:image" content="https://ted-kev-dorg.github.io/wdd231/chamber/images/facebook-meta-feed.png">
+    
+    <!-- Google Fonts Framework Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JS Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/circle-of-hands.svg" alt="WestCoast Chamber of Commerce Logo" width="48" height="48">
+            <h2>WestCoast Chamber of Commerce</h2>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation"></button>
+        <nav id="primary-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        <!-- HERO SECTION WITH Call to action -->
+        <section class="hero-box">
+            <img src="images/hero-chamber.webp" alt="WestCoast Commerce and Business District" class="hero-img" width="1200" height="500">
+            <div class="cta-overlay">
+                <h1>Building A Thriving Community</h1>
+                <p>Join the region's most active business network today.</p>
+                <a href="#" class="cta-button">Join Us Now</a>
+            </div>
+        </section>
+
+        <!-- CURRENT EVENTS SECTION -->
+        <section class="card events-card">
+            <h2>Upcoming Events</h2>
+            <div class="event-item">
+                <h3>Annual Commerce Expo 2026</h3>
+                <p>📅 August 12, 2026 | 09:00 AM</p>
+                <p>Network with over 100 regional business leaders at the Main Convention Center.</p>
+            </div>
+            <hr>
+            <div class="event-item">
+                <h3>Small Business Tech Workshop</h3>
+                <p>📅 September 05, 2026 | 02:00 PM</p>
+                <p>Learn how modern Web infrastructure can scale your local business sales.</p>
+            </div>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="card weather-card">
+            <h2>Local Weather</h2>
+            <div class="weather-current">
+                <!-- Icon is populated entirely by JavaScript -->
+                <img id="weather-icon" src="" alt="" width="64" height="64" loading="lazy">
+                <div class="weather-details">
+                    <p><span id="current-temp">--</span>°C</p>
+                    <p id="weather-desc" class="capitalize">Loading weather...</p>
+                </div>
+            </div>
+            <h3>Weather Forecast</h3>
+            <div id="forecast-container" class="forecast-grid">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- COMPANY SPOTLIGHTS SECTION -->
+        <section class="spotlights-wrapper">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- 2-3 Random Gold/Silver Members Injected dynamically via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>WestCoast Chamber of Commerce</h2>            
+            <p>WestCoast, Abidjan, Ivory Coast</p>
+            <p>Marcory Zone 4, 16th avenue</p>
+            <p>info@WestCoast.org</p>
+            <p>(225) 555-2300</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube Channel">
+                <img src="images/youtube-logo.svg" alt="westcoast youtube page" width="48" height="48">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter Feed">
+                <img src="images/x-twitter.svg" alt="westcoast twitter page" width="48" height="48">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Business Network">
+                <img src="images/linkedin-logo.svg" alt="westcoast linkedin page" width="48" height="48">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Kevin Dorgeles Tetede</p>
+            <p>&copy; <span id="current-year"></span> WestCoast Chamber of Commerce</p>
+            <p id="last-modified"></p> 
+        </div>
+    </footer>
+</body>
+</html>

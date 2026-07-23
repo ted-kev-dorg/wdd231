@@ -344,7 +344,7 @@ footer {
     display: inline-block;
     margin-top: 0.75rem;
     padding: 0.7rem 1.5rem;
-    background-color: var(--secondary-color);
+    background-color: var(--bg-light);
     color: #221a15;
     font-weight: bold;
     text-decoration: none;
@@ -445,4 +445,11 @@ footer {
 .silver-badge {
     background-color: #e0e0e0;
     color: #37474f;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--secondary-color);
 }

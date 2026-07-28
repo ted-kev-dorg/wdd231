@@ -220,3 +220,42 @@ footer p {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
+
+/* Modal dialog styling */
+/* Base Modal Container Styling */
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;            /* Fills most of small mobile screens */
+    max-width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Semi-transparent Dimmed Screen Overlay */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+/* Close Button Positioned in Top Right */
+dialog button#closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+dialog button#closeModal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

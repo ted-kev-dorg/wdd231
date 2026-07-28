@@ -124,3 +124,4 @@ function displaySpotlights(spotlights) {
         spotlightContainer.appendChild(card);
     });
 }
+

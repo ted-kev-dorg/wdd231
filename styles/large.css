@@ -26,4 +26,10 @@
     .course-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    
+    /* dialog styling f: Slightly roomier padding on desktop */
+    dialog {
+        padding: 2.5rem;
+    }
 }

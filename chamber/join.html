@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Chamber of Commerce - Join</title>
+    <meta name="description" content="Apply for membership with the WestCoast Chamber of Commerce. Select from NP, Bronze, Silver, or Gold membership levels.">
+    <meta name="author" content="Kevin Dorgeles Tetede">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://ted-kev-dorg.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="WestCoast Chamber of Commerce - Join">
+    <meta property="og:description" content="Apply to join the WestCoast Chamber of Commerce and grow your business network.">
+    <meta property="og:image" content="https://ted-kev-dorg.github.io/wdd231/chamber/images/facebook-meta-feed.webp">
+
+    <!-- Google Fonts Framework Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- JS Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <!-- <script src="scripts/home.js" defer></script> -->
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+    <a href="index.html" class="brand">
+        <img src="images/circle-of-hands.svg" alt="WestCoast Chamber of Commerce Logo" width="48" height="48">
+        <h2>WestCoast Chamber of Commerce</h2>
+    </a>
+    <button id="menu-toggle" aria-label="Toggle Navigation"></button>
+    <nav id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="#">Discover</a>
+    </nav>
+    </header>
+
+    <main class="join-container">
+        <div class="directory-title-bar">
+            <h2>Membership Application</h2>
+        </div>
+
+        <hr>
+
+        <div class="join-layout">
+            <!-- Application Form -->
+            <section class="card form-section">
+                <h2>Application Form</h2>
+                <form method="get" action="thankyou.html" id="join-form">
+                    
+                    <label title="First Name">
+                        First Name *
+                        <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+
+                    <label title="Last Name">
+                        Last Name *
+                        <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label title="Organizational Title">
+                        Organizational Title
+                        <input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" title="Alpha characters, hyphens, and spaces only (minimum 7 characters)" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+
+                    <label title="Email Address">
+                        Email Address *
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address">
+                    </label>
+
+                    <label title="Mobile Phone">
+                        Mobile Phone Number *
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                    </label>
+
+                    <label title="Organization Name">
+                        Business / Organization Name *
+                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Enter your organization name">
+                    </label>
+
+                    <label title="Membership Level">
+                        Membership Level *
+                        <select name="membership" id="membership" required title="Select your membership level">
+                            <option value="" disabled selected>Select a Level...</option>
+                            <option value="np">NP Membership (Non-Profit - Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label title="Organization Description">
+                        Business / Organization Description
+                        <textarea name="description" id="description" rows="4" title="Briefly describe your organization"></textarea>
+                    </label>
+
+                    <!-- Hidden Timestamp Field -->
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-btn">
+                </form>
+            </section>
+
+            <!-- Membership Level Cards -->
+            <section class="cards-section">
+                <h2>Membership Levels</h2>
+                <div class="cards-grid">
+                    <div class="level-card">
+                        <h3>NP Membership Level</h3>
+                        <button type="button" class="open-modal" data-modal="modal-np">Learn More</button>
+                    </div>
+
+                    <div class="level-card">
+                        <h3>Bronze Membership Level</h3>
+                        <button type="button" class="open-modal" data-modal="modal-bronze">Learn More</button>
+                    </div>
+
+                    <div class="level-card">
+                        <h3>Silver Membership Level</h3>
+                        <button type="button" class="open-modal" data-modal="modal-silver">Learn More</button>
+                    </div>
+
+                    <div class="level-card">
+                        <h3>Gold Membership Level</h3>
+                        <button type="button" class="open-modal" data-modal="modal-gold">Learn More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- HTML Modals for Membership Benefits -->
+        <dialog id="modal-np">
+            <div class="modal-content">
+                <h2>NP Membership Benefits</h2>
+                <p><strong>Cost:</strong> Free</p>
+                <ul>
+                    <li>Directory Listing</li>
+                    <li>Access to Community Events</li>
+                    <li>Non-Profit Networking Webinars</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <div class="modal-content">
+                <h2>Bronze Membership Benefits</h2>
+                <p><strong>Cost:</strong> $150 / year</p>
+                <ul>
+                    <li>Standard Directory Listing</li>
+                    <li>10% Discount on Event Tickets</li>
+                    <li>Access to Monthly Business Training</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <div class="modal-content">
+                <h2>Silver Membership Benefits</h2>
+                <p><strong>Cost:</strong> $300 / year</p>
+                <ul>
+                    <li>Enhanced Directory Listing with Logo</li>
+                    <li>20% Discount on Event Tickets</li>
+                    <li>Homepage Spotlight Position (Rotating)</li>
+                    <li>Access to Exclusive Networking Roundtables</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <div class="modal-content">
+                <h2>Gold Membership Benefits</h2>
+                <p><strong>Cost:</strong> $500 / year</p>
+                <ul>
+                    <li>Premium Directory Banner & Priority Placement</li>
+                    <li>Free Admission to All Chamber Events</li>
+                    <li>Permanent Homepage Spotlight Feature</li>
+                    <li>Sponsorship Discounts for Annual Gala</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>WestCoast Chamber of Commerce</h2>            
+            <p>WestCoast, Abidjan, Ivory Coast</p>
+            <p>Marcory Zone 4, 16th avenue</p>
+            <p>info@WestCoast.org</p>
+            <p>(225) 555-2300</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube Channel">
+                <img src="images/youtube-logo.svg" alt="westcoast youtube page" width="48" height="48">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter Feed">
+                <img src="images/x-twitter.svg" alt="westcoast twitter page" width="48" height="48">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Business Network">
+                <img src="images/linkedin-logo.svg" alt="westcoast linkedin page" width="48" height="48">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Kevin Dorgeles Tetede</p>
+            <p>&copy; <span id="current-year"></span> WestCoast Chamber of Commerce</p>
+            <p id="last-modified"></p> 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Layout Organization */
+.join-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Form Styles */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-section label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    gap: 0.35rem;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--bg-light);
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    outline: 2px solid var(--secondary-color);
+    background-color: #ffffff;
+}
+
+.form-section input:required:valid,
+.form-section select:required:valid {
+    border-left: 5px solid #2e7d32;
+}
+
+input.submit-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+/* Membership Cards Container */
+.cards-section h2 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Individual Membership Card (Matching Wireframe Image) */
+.level-card {
+    background-color: #dcdcdc;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    
+    /* Animation on initial page load */
+    animation: fadeInSlide 0.8s ease-out forwards;
+}
+
+/* Stagger initial load animations */
+.level-card:nth-child(1) { animation-delay: 0.1s; }
+.level-card:nth-child(2) { animation-delay: 0.2s; }
+.level-card:nth-child(3) { animation-delay: 0.3s; }
+.level-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-card h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.open-modal {
+    background-color: #ffffff;
+    color: var(--text-color);
+    border: 1px solid #777777;
+    padding: 0.4rem 1.2rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.open-modal:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+/* Modal Window Styling */
+dialog {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    background-color: var(--card-bg);
+}
+
+dialog::backdrop {
+    background-color: rgba(34, 26, 21, 0.7);
+}
+
+.modal-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.modal-content ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    line-height: 1.6;
+}
+
+.close-modal {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-modal:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Desktop Grid View */
+@media screen and (min-width: 768px) {
+    .join-layout {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+

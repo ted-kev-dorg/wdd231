@@ -101,9 +101,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 3px solid var(--secondary-color);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.50rem;
+    /* border-bottom: 3px solid var(--); */
 }
 
 .directory-title-bar h2 {
@@ -453,5 +453,29 @@ hr {
     height: 1px;
     background-color: var(--secondary-color);
 }
+
+/* Ensure the brand link behaves like a flex container and retains styling */
+a.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none; /* Removes link underline */
+    color: inherit;        /* Keeps original text color */
+}
+
+a.brand:hover {
+    text-decoration: none; /* Prevents underline on hover */
+}
+
+a.brand h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    white-space: normal;  /* Prevents text clipping/truncation */
+}
+
+
+
 
 

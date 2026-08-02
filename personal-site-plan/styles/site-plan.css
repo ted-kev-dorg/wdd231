@@ -1,7 +1,7 @@
 /* World Recipe Explorer - Site Plan Stylesheet */
 
 :root {
-    --primary-color: #D35400; /* Rich burnt orange / spice */
+    --primary-color: #B94600; /* Darkened burnt orange to pass accessibility contrast */
     --secondary-color: #2C3E50; /* Deep slate / charcoal */
     --background-color: #FDFEFE; /* Soft off-white */
     --text-color: #333333;

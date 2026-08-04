@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover local attractions, culture, demographics, and business opportunities in Abidjan with WestCoast Chamber of Commerce.">
+    <meta name="author" content="Kevin Dorgeles Tetede">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://ted-kev-dorg.github.io/wdd231/chamber/discover.html">
+    <meta property="og:title" content="WestCoast Chamber of Commerce - Discover">
+    <meta property="og:description" content="Explore local points of interest and business potential in our vibrant region.">
+    <meta property="og:image" content="https://ted-kev-dorg.github.io/wdd231/chamber/images/facebook-meta-feed.webp">
+
+    <!-- Google Fonts Framework Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- JS Scripts (Module Script) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="images/circle-of-hands.svg" alt="WestCoast Chamber of Commerce Logo" width="48" height="48">
+            <h2>WestCoast Chamber of Commerce</h2>
+        </a>
+        <button id="menu-toggle" aria-label="Toggle Navigation"></button>
+        <nav id="primary-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html" class="active">Discover</a>
+        </nav>
+    </header>
+
+    <main class="discover-container">
+        <!-- Visitor Message Banner (localStorage) -->
+        <div id="visit-message" class="visit-banner" aria-live="polite"></div>
+
+        <div class="directory-title-bar">
+            <h2>Discover Abidjan & West Coast Region</h2>
+        </div>
+
+        <!-- Demographics Sidebar Info -->
+        <aside class="demographics-card card">
+            <h3>Regional Overview</h3>
+            <p><strong>Population:</strong> ~5.6 Million (Metro Abidjan)</p>
+            <p><strong>Economic Hub:</strong> Major economic center of Francophone West Africa.</p>
+            <p><strong>Primary Port:</strong> Port of Abidjan (One of Africa's largest deepwater ports).</p>
+            <p><strong>Climate:</strong> Tropical savanna with vibrant coastal breezes.</p>
+        </aside>
+
+        <!-- Grid Container with Named Areas for the 8 Cards -->
+        <div id="discover-grid" class="discover-grid">
+            <!-- Cards generated dynamically via discover.js -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>WestCoast Chamber of Commerce</h2>            
+            <p>WestCoast, Abidjan, Ivory Coast</p>
+            <p>Marcory Zone 4, 16th avenue</p>
+            <p>info@WestCoast.org</p>
+            <p>(225) 555-2300</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube Channel">
+                <img src="images/youtube-logo.svg" alt="westcoast youtube page" width="48" height="48">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter Feed">
+                <img src="images/x-twitter.svg" alt="westcoast twitter page" width="48" height="48">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Business Network">
+                <img src="images/linkedin-logo.svg" alt="westcoast linkedin page" width="48" height="48">
+            </a>
+        </div>
+        <div class="footer-meta">
+            <p>WDD 231 Class Project</p>
+            <p>Kevin Dorgeles Tetede</p>
+            <p>&copy; <span id="current-year"></span> WestCoast Chamber of Commerce</p>
+            <p id="last-modified"></p> 
+        </div>
+    </footer>
+</body>
+</html>

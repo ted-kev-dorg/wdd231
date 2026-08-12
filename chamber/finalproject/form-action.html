@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | World Recipe Explorer</title>
+  <meta name="description" content="Confirmation page showing the details submitted through the World Recipe Explorer contact form.">
+  <meta name="author" content="[Your Name]">
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/app.mjs"></script>
+  <script type="module" src="scripts/form-action.mjs"></script>
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link" aria-label="World Recipe Explorer home">
+      <img src="images/logo.svg" alt="World Recipe Explorer logo" width="44" height="44">
+      <span class="site-name">World Recipe Explorer</span>
+    </a>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Explore Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thanks for reaching out!</h1>
+    <p>Here is what we received:</p>
+    <ul id="submittedData"></ul>
+    <a class="btn" href="recipes.html">Back to Recipes</a>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p id="last-modified"></p>
+        <p>&copy; <span id="current-year"></span> World Recipe Explorer</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

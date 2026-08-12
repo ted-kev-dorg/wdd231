@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Recipes | World Recipe Explorer</title>
+  <meta name="description" content="Search and filter authentic recipes from around the world by name or region, and save your favorites.">
+  <meta name="author" content="[Your Name]">
+
+  <meta property="og:title" content="Explore Recipes | World Recipe Explorer">
+  <meta property="og:description" content="Search and filter authentic recipes from around the world by name or region.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/final/recipes.html">
+  <meta property="og:image" content="https://example.com/final/images/logo.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Explore Recipes | World Recipe Explorer">
+  <meta name="twitter:description" content="Search and filter authentic recipes from around the world by name or region.">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/app.mjs"></script>
+  <script type="module" src="scripts/recipes.mjs"></script>
+
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link" aria-label="World Recipe Explorer home">
+      <img src="images/logo.svg" alt="World Recipe Explorer logo" width="44" height="44">
+      <span class="site-name">World Recipe Explorer</span>
+    </a>                   
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="recipes.html">Explore Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Explore Recipes</h1>
+    <p>Search by dish name, filter by region, or browse your saved favorites.</p>
+
+    <form class="filters" role="search" onsubmit="return false;">
+      <div>
+        <label for="searchInput">Search by name</label>
+        <input type="search" id="searchInput" name="search" placeholder="e.g. Chicken Curry" autocomplete="off">
+      </div>
+      <div>
+        <label for="areaSelect">Filter by region</label>
+        <select id="areaSelect" name="area">
+          <option value="all">All Regions</option>
+        </select>
+      </div>
+      <div>
+        <label for="favToggle">Favorites</label>
+        <button type="button" id="favToggle" class="btn secondary" aria-pressed="false">Show Favorites Only</button>
+      </div>
+    </form>
+
+    <p id="resultCount" aria-live="polite"></p>
+
+    <section id="recipeGrid" class="recipe-grid" aria-live="polite"></section>
+  </main>
+
+  <dialog id="recipeModal" aria-labelledby="modalHeading">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close recipe details">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h2>World Recipe Explorer</h2>
+        <p>By Kevin Tetede - Built for WDD231 &mdash; Web Frontend Development I Project</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="images/github-icon.svg" alt="GitHub logo" width="24" height="24">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="images/instagram-icon.svg" alt="Instagram logo" width="24" height="24"> 
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+          <img src="images/youtube-icon.svg" alt="YouTube logo" width="24" height="24">
+        </a>
+      </div>
+      
+      <div>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="https://example.com/project-video" target="_blank" rel="noopener">Project Demo Video</a></p>
+        <p id="last-modified"></p>
+        <p>&copy; <span id="current-year"></span> World Recipe Explorer</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
